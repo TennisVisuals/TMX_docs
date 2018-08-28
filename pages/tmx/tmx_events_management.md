@@ -39,7 +39,7 @@ Player can be added individually by clicking their names or by using the search 
 
 {% include image.html file="ch_events_approve_search.png" alt="Search Approve" caption="Search Approve" %}
 
-Players can be approved as a __Wildcard__ by [Context Clicking](tms_fundamentals.html) on their name.
+Players can be approved as a __Wildcard__ by [Context Clicking](tmx_fundamentals.html) on their name.
 
 {% include image.html file="ch_events_wildcard.png" alt="Approve Wildcard" caption="Approve Wildcard" %}
 

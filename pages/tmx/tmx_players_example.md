@@ -12,9 +12,9 @@ CourtHive can be enabled to connect to an example player database by entering "a
 
 {% include image.html file="ch_key_atpwta.png" alt="ATP/WTA" caption="Configuration Key" %}
 
-Nothing visible will happen when this key is entered, the system will only be configured with the apprpriate parameters for connecting to a remote database.
+Nothing visible will happen when this key is entered, but the system will be configured with the appropriate parameters for connecting to a remote database.
 
-To load the exmaple database, hover the mouse over the __Player Count__ icon in the upper right corner and click on the __Refresh__ icon that appears to the left.
+To load the examaple database, hover the mouse over the __Player Count__ icon in the upper right corner and click on the __Refresh__ icon that appears to the left.
 
 {% include image.html file="ch_players_refresh.png" alt="Players" caption="Refresh Database" %}
 

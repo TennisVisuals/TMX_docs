@@ -8,7 +8,7 @@ toc: true
 
 ## Introduction
 
-The Players Tab is where tournament players are managed.  Registered players may be synchronized with remote servers; additional players may be added from the local dataabase or removed from the tournament; players may also be signed in or out of the tournament.
+The Players Tab is where tournament players are managed.  Registered players may be synchronized with remote servers; additional players may be created, added from the local database or removed from the tournament; players may also be signed in or out of the tournament.
 
 {% include image.html file="ch_tournament_players.png" alt="Tournament Players" caption="Tournament Players" %}
 
@@ -30,9 +30,9 @@ Only players who are eligible for the Tournament Category will be found when sea
 
 {% include image.html file="ch_search_roger.png" alt="Add Player" caption="Eligible Player Search" %}
 
-## Modifying Rankings 
+## Modifying Rankings
 
-Once players have been added to a tournament, a __Rankings Icon__ appears to the left of the __Refresh Icon__.  If player rankings need to be modified, click the __Rankings Icon__ to enter rankings edit mode. 
+Once players have been added to a tournament, a __Rankings Icon__ appears to the left of the __Refresh Icon__.  If player rankings need to be modified, click the __Rankings Icon__ to enter rankings edit mode.
 
 {% include image.html file="ch_rankings_icon.png" alt="Modify Rankings" %}
 
@@ -66,7 +66,7 @@ Clicking the __PDF Icon__ presents a choice of printing either a Singles or a Do
 
 {% include note.html content="PDF Sign-In sheets are either saved or opened in a new Browser Tab, depending on the [Setting](tmx_setup.html#check-your-default-settings)." %}
 
-## Sign-In and Sign-Out 
+## Sign-In and Sign-Out
 
 The simplest way to sign-in or sign-out players is to click on the player's name.
 

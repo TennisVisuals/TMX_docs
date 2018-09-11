@@ -10,6 +10,14 @@ Screen Recordings of CourtHive/TMX usage are included throughout the documentati
 
 Here are some introductory examples:
 
+## Quick Start
+
+Screen Capture of the [Quick Start Tutorial](tmx_quick_start.html)
+
+{% unless site.output == "pdf" %}
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/6wkHX5HzVSk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+{% endunless %}
+
 ## Basic Introduction
 
 Demonstrates setting language and loading an example ATP / WTA player database
@@ -23,4 +31,3 @@ Demonstrates setting language and loading an example ATP / WTA player database
 {% unless site.output == "pdf" %}
    <iframe width="560" height="315" src="https://www.youtube.com/embed/wr8Z4Pw9YqA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 {% endunless %}
-

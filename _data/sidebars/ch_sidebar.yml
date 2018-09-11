@@ -21,6 +21,10 @@ entries:
       url: /tmx_demos.html
       output: web
 
+    - title: Quick Start
+      url: /tmx_quick_start.html
+      output: web
+
     - title: Support
       url: /tmx_support.html
       output: web
@@ -107,6 +111,10 @@ entries:
 
     - title: Players
       url: /tmx_tournament_players.html
+      output: web
+
+    - title: Teams
+      url: /tmx_tournament_teams.html
       output: web
 
     - title: Courts

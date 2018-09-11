@@ -6,14 +6,18 @@ permalink: index.html
 toc: false
 ---
 
+## Quick Start
+
+If you just want to get started making draws... try the [Quick Start](tmx_quick_start.html)
+
 ## Open Source Tennis
 
 CourtHive is an Open Source / Open Data initiative to develop applications for Tennis which are affordable, accessible, and which promote the emergence of standards for the representation of data related to tennis.
 
 CourtHive hosts a number of applications.  At present these include:
-* [CourtHive/TMX](https://courthive.com/tmx) - a Tournament Management application specifically for tennis
-* [CourtHive/Live](https://courthive.com/Live) - a client for viewing tournament schedules, draws and live scores
-* [CourtHive/Mobile](https://courthive.com/mobile) - a mobile application for tracking tennis matches
+* [CourtHive/TMX](https://courthive.com/tmx){:target="_ blank"} - a Tournament Management application specifically for tennis
+* [CourtHive/Live](https://courthive.com/Live){:target="_ blank"} - a client for viewing tournament schedules, draws and live scores
+* [CourtHive/Mobile](https://courthive.com/mobile){:target="_ blank"} - a mobile application for tracking tennis matches
 * CourtHive Scores - a private client app to share with friends/family who want to view point-by-point detail of matches which are being broadcast live
 
 Significant portions of CourtHive projects are now or *__will soon__* be available on GitHub [TennisVisuals](https://github.com/TennisVisuals){:target="_ blank"} and [CourtHive](https://github.com/CourtHive){:target="_ blank"}.

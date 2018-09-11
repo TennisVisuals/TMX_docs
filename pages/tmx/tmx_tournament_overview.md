@@ -26,6 +26,8 @@ To exit __Editing Mode__, click on the __Check Mark__ in the upper right hand co
 
 ## Downloading Tournaments
 
+{% include note.html content="Some functionality is not available until an __Organization Key__ has been entered." %}
+
 In the center of the tournament panel there is a __Cloud Download__ icon.  Clicking this icon will retrieve a version of the current tournament from the [CourtHive Cloud Server.](tmx_cloud_server.html)
 
 {% include image.html file="ch_cloudfetch_notfound.png" alt="Not Found" caption="Not Found" %}

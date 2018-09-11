@@ -230,6 +230,17 @@
 
 
 {
+"title": "TMX Quick Start",
+"tags": "",
+"keywords": "Example Tutorial Quick Start",
+"url": "tmx_quick_start.html",
+"summary": ""
+}
+,
+
+
+
+{
 "title": "Delegating to Mobile Devices",
 "tags": "",
 "keywords": "tmx mobile delegation",
@@ -388,6 +399,17 @@
 "tags": "",
 "keywords": "Scoring Matches",
 "url": "tmx_tournament_scoring.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Tournament Teams Tab",
+"tags": "",
+"keywords": "tournament overview",
+"url": "tmx_tournament_teams.html",
 "summary": ""
 }
 ,

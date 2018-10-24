@@ -26,7 +26,7 @@ The __DOWN__ arrow exports the __Tournament Record__ in JSON format to the local
 
 {% include image.html file="ch_tournaments_save_state.png" alt="Save State" caption="Save State" %}
 
-The "Push" and "Export" icons change color to indicate whether changes have been made to the the local copy of the tournament since the tournament was last pushed or exported. 
+The "Push" and "Export" icons change color to indicate whether changes have been made to the the local copy of the tournament since the tournament was last pushed or exported.
 
 __Yellow__ indicates "Out of Date" and __Green__ indicates "Up to Date".
 
@@ -38,4 +38,4 @@ Tournament Notes are only applicable when [Publishing](tmx_publishing_overview.h
 
 {% include image.html file="ch_tournament_notes_edit.png" alt="Notes" caption="Editing Tournament Notes" %}
 
-Tournament notes are "sanitized" to prevent [XSS Attacks](https://en.wikipedia.org/wiki/Cross-site_scripting); this means that only a subset of HTML tags are allowed.
+TMX provides a WYSIWYG editor for formatting Tournament notes.

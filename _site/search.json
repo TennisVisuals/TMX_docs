@@ -131,6 +131,17 @@
 
 
 {
+"title": "Configuring Data Storage",
+"tags": "",
+"keywords": "data management",
+"url": "tmx_data_storage.html",
+"summary": ""
+}
+,
+
+
+
+{
 "title": "Demonstration Videos",
 "tags": "",
 "keywords": "tournament demonstration videos",
@@ -164,10 +175,32 @@
 
 
 {
+"title": "Using Google Sheets",
+"tags": "",
+"keywords": "data management",
+"url": "tmx_google_sheets.html",
+"summary": ""
+}
+,
+
+
+
+{
 "title": "Language Selection",
 "tags": "",
 "keywords": "Installation, Language Selection",
 "url": "tmx_idiom.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "JotForm Registration Page",
+"tags": "",
+"keywords": "data management registration",
+"url": "tmx_jotform.html",
 "summary": ""
 }
 ,
@@ -458,6 +491,17 @@
 "tags": "",
 "keywords": "",
 "url": "assetscssstyle.css",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "",
+"tags": "",
+"keywords": "",
+"url": "pagestmxtmx_tournament_results.html",
 "summary": ""
 }
 ,

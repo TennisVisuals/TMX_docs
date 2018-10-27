@@ -108,6 +108,12 @@
   
   
   <url>
+    <loc>http://localhost:4000/tmx_data_storage.html</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4000/tmx_demos.html</loc>
   </url>
   
@@ -126,7 +132,19 @@
   
   
   <url>
+    <loc>http://localhost:4000/tmx_google_sheets.html</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4000/tmx_idiom.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/tmx_jotform.html</loc>
   </url>
   
   
@@ -287,6 +305,12 @@
   
   <url>
     <loc>http://localhost:4000/assets/css/style.css</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/tmx/tmx_tournament_results.html</loc>
   </url>
   
   

@@ -15,7 +15,9 @@ The icon to the right of the search box is dependent on the mode of the search b
 
 {% include image.html file="ch_search_players.png" alt="Player Search" caption="Player Search Mode" %}
 
-The default behavior of the search box is to find players, and the default search order is First Name / Last Name.  You can change the search order by Right or Control Clicking in the search box.
+The default behavior of the search box is to find players, and the default search order is First Name / Last Name.  You can temporarily change the search order by Right or Control Clicking in the search box.  
+
+The default behavior may be changed via the [Settings Dialogue](ch_tmx_setup.html).
 
 {% include image.html file="ch_search_order.png" alt="Search Order" caption="Right or Control Click to change Search Order" %}
 
@@ -35,6 +37,5 @@ The Search Box behavior will change while performing certain operations.
 
 * When __Adding__ players to a tournament, only players valid for a chosen age category will be found
 * When __Approving__ players for Tournament Events, only players eligilble for an event will be found
- 
-{% include image.html file="ch_search_add_player.png" alt="Add Player" caption="Add Player" %}
 
+{% include image.html file="ch_search_add_player.png" alt="Add Player" caption="Add Player" %}

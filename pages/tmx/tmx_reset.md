@@ -16,4 +16,6 @@ From the Home Screen, click on the Keys Icon and enter "reset" in the input fiel
 
 Then confirm that you want to erase all tournament, player, club, match and point data.
 
+Stored Configuration Keys will also be removed.
+
 {% include image.html file="ch_reset_warning.png" alt="Reset Warning" caption="Reset Warning" %}

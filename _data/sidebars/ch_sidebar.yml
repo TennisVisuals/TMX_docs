@@ -1,7 +1,7 @@
 entries:
 - title: sidebar
   product: CourtHive TMX
-  version: 1.0
+  version: 1.3
   folders:
 
   - title: Overview
@@ -65,13 +65,21 @@ entries:
       url: /tmx_data.html
       output: web
 
+    - title: Using Google Sheets
+      url: /tmx_google_sheets.html
+      output: web
+
     - title: Resetting TMX
       url: /tmx_reset.html
       output: web
 
-  - title: Player Database
+  - title: Managing Data
     output: web
     folderitems:
+
+    - title: Configuring Data Storage
+      url: /tmx_data_storage.html
+      output: web
 
     - title: Managing Players
       url: /tmx_players_managing.html
@@ -79,10 +87,6 @@ entries:
 
     - title: Player Rankings
       url: /tmx_players_rankings.html
-      output: web
-
-    - title: Example Dataset
-      url: /tmx_players_example.html
       output: web
 
   - title: Tournament Calendar

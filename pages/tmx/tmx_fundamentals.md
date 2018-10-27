@@ -5,24 +5,16 @@ sidebar: ch_sidebar
 permalink: tmx_fundamentals.html
 toc: false
 ---
-## CourtHive/TMX makes extensive use of "Context" menus
+## "Context" menus
+
+The initial version of CourtHive/TMX made extensive use of context menus, but reliance on context menus has been phased out as support for Tablets and Touch Devices has been added.  Context menus are still available and often serve as short cuts for frequent tasks to avoid menus which would otherwise appear.
 
 * Context Menus are accessed by Right Clicking (Windows) or Control Clicking (Mac).
 * Example: The icon for publishing can be used to 'un-publish' a draw or a schedule.
-* Example: Clicking on an incomplete match in a draw will launch a scoring dialogue, while Context Clicking the same location offers the option to remove the match.
-
-## Other Uses of Context Clicking:
-* Nominating Wildcards in Event Creation
-* Swapping Player Positions in Draws
-* Determining Alternates in Draws
-* Deleting or Merging Tournaments in Calendar
-* Providing Scheduling Details and Match Start/Finish times
-* Assessing Penalties in Schedules
-* Defining Match Referees in Schedules
 
 <br>
 {% include tip.html content="Context Clicking is often the opposite of normal clicking." %}
 
-{% include tip.html content="Context Click the Home Icon to check messages and system version." %}
+## Escape Key Dismisses Pop-UP Messages
 
 {% include tip.html content="Context Menus may often be dismissed by pressing the Escape Key." %}

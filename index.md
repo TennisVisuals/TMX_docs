@@ -24,15 +24,15 @@ Significant portions of CourtHive projects are now or *__will soon__* be availab
 
 ## Tournament Management
 
-[CourtHive/TMX](https://courthive.com/tmx) is an open platform for Tennis Tournament Management; it is implemented as a [Progressive Web App](https://en.wikipedia.org/wiki/Progressive_Web_Apps){:target="_ blank"} and runs in Chrome, Firefox and Opera, even when there is no internet connection.
+[CourtHive/TMX](https://courthive.com/tmx) is an open platform for Tennis Tournament Management; it is implemented as a [Progressive Web App](https://en.wikipedia.org/wiki/Progressive_Web_Apps){:target="_ blank"} and runs in Chrome, Opera, Safari and Firefox, even when there is no internet connection.
 
-TMX is designed to work standalone or to integrate with existing player registration and ranking systems.
+TMX is designed to work standalone or to integrate with existing player registration, rating and ranking systems.
 
 ## Eyes On Court
 
 Part of the vision of the CourtHive ecosystem is that anyone who is present at a tennis event can contribute in some way to enhancing the tournament experience.  
 
-[CourtHive/Mobile](https://courthive.com/mobile) was an early experiment in live broadcasting of a single tennis match that will be greatly expanded in the future as it is integrated with the [CourtHive/TMX](https://courthive.com/tmx) and [CourtHive/Live](https://courthive.com/Live).
+[CourtHive/Mobile](https://courthive.com/mobile) was an early experiment in live broadcasting of a single tennis match and has recently been integrated with CourtHive/TMX and CourtHive/Live.  It is now possible to delegate matches from CourtHive/TMX directly to CourtHive/Mobile, and for point-by-point scores to appear directly on CourtHive/Live as well as in the tournament organizer's console in CourtHive/TMX.
 
 __Crowdsourced scoring__ (with geofencing) can enable more efficient scheduling.
 

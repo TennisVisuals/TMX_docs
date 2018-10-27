@@ -162,7 +162,7 @@
                 
 
 <ul id="mysidebar" class="nav">
-  <li class="sidebarTitle">CourtHive TMX 1.0</li>
+  <li class="sidebarTitle">CourtHive TMX 1.3</li>
   
   
   
@@ -274,6 +274,13 @@
           
           
           
+          <li><a href="tmx_google_sheets.html">Using Google Sheets</a></li>
+          
+          
+          
+          
+          
+          
           <li><a href="tmx_reset.html">Resetting TMX</a></li>
           
           
@@ -285,8 +292,15 @@
       
   
   <li>
-      <a href="#">Player Database</a>
+      <a href="#">Managing Data</a>
       <ul>
+          
+          
+          
+          <li><a href="tmx_data_storage.html">Configuring Data Storage</a></li>
+          
+          
+          
           
           
           
@@ -298,13 +312,6 @@
           
           
           <li><a href="tmx_players_rankings.html">Player Rankings</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a href="tmx_players_example.html">Example Dataset</a></li>
           
           
           
@@ -473,6 +480,29 @@
    
 
     
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
+});
+</script>
+
+<div id="toc"></div>
+
+    
 
 
     
@@ -492,96 +522,69 @@
 
 <h2 id="check-your-default-settings">Check Your Default Settings</h2>
 
-<p>From the Home Screen, click on the settings icon to configure your preferences.  If you have been given a <a href="tmx_configuration.html">Configuration Key</a> some settings may have been configured for you and may be unavailable (such as Organization Logos).</p>
+<p>From the Home Screen, click on the settings icon to configure your preferences.</p>
 
 <figure><img class="docimage" src="images/ch_settings_icon.png" alt="Settings" /><figcaption>Settings</figcaption></figure>
 
-<table>
-  <thead>
-    <tr>
-      <th>Tab</th>
-      <th>Setting Name</th>
-      <th>Explanation</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Org</td>
-      <td>Logos</td>
-      <td>Upload logos for use on PDF Sign-in Sheets, Schedules, and Draws</td>
-    </tr>
-    <tr>
-      <td>General</td>
-      <td>Week Starts Monday</td>
-      <td>Set first week day to Monday instead of Sunday</td>
-    </tr>
-    <tr>
-      <td>Search</td>
-      <td>Last Name, First Name</td>
-      <td>Reverse the default order when typing names</td>
-    </tr>
-    <tr>
-      <td>Search</td>
-      <td>Diacritics</td>
-      <td>Search using Diacritics (accents above/below characters)</td>
-    </tr>
-    <tr>
-      <td>Draws</td>
-      <td>Compressed Draw Formats</td>
-      <td>Whether to allow 12, 24, 48 draw sizes</td>
-    </tr>
-    <tr>
-      <td>Draws</td>
-      <td>Automatic Bye Placement</td>
-      <td>De-select if you want to place Byes manually</td>
-    </tr>
-    <tr>
-      <td>Draws</td>
-      <td>Fixed Bye Order</td>
-      <td>Do not place byes strictly by seeding</td>
-    </tr>
-    <tr>
-      <td>Draws</td>
-      <td>LL from All Qualifying Rounds</td>
-      <td>Include losers from all rounds on LL sign up sheet</td>
-    </tr>
-    <tr>
-      <td>Draws</td>
-      <td>Court Details</td>
-      <td>Display scheduled court in draw</td>
-    </tr>
-    <tr>
-      <td>Draws</td>
-      <td>Matches Before Count</td>
-      <td>Display # of prior matches  in draw</td>
-    </tr>
-    <tr>
-      <td>Publishing</td>
-      <td>Require Confirmation</td>
-      <td>Do not publish without confirmation</td>
-    </tr>
-    <tr>
-      <td>Publishing</td>
-      <td>Publish when score entered</td>
-      <td>Immediate publishing</td>
-    </tr>
-    <tr>
-      <td>Printing</td>
-      <td>Save PDFs</td>
-      <td>Save immediately instead of opening in a new tab</td>
-    </tr>
-    <tr>
-      <td>Schedule</td>
-      <td>Scores in draw order</td>
-      <td>As opposed to Winner Score first</td>
-    </tr>
-    <tr>
-      <td>Schedule</td>
-      <td>Schedule Completed Matches</td>
-      <td>Show completed matches in search</td>
-    </tr>
-  </tbody>
-</table>
+<figure><img class="docimage" src="images/ch_settings_tabs.png" alt="Tabs" /><figcaption>Settings Tabs</figcaption></figure>
+
+<p>If you have been given a <a href="tmx_configuration.html">Configuration Key</a> some settings may have been configured for you and may be unavailable (such as Organization).</p>
+
+<figure><img class="docimage" src="images/ch_settings_logos.png" alt="General" /><figcaption>Organization Settings</figcaption></figure>
+
+<p><strong>Logos:</strong> If you haven’t entered an Organization Key then you have the opportunity to upload logos which will appear at the top of Player Lists, Draw Sheets and Schedules.</p>
+
+<figure><img class="docimage" src="images/ch_settings_general.png" alt="General" /><figcaption>General Settings</figcaption></figure>
+
+<p><strong>Week Starts Monday:</strong> Changes the behavior of pop-up calendars which enable date selection for tournaments and players
+<strong>Documentation Links:</strong> Enables context-sensitive documentation links throughout CourtHive/TMX</p>
+
+<figure><img class="docimage" src="images/ch_settings_search.png" alt="Search" /><figcaption>Search Settings</figcaption></figure>
+
+<p><strong>Last Name, First Name:</strong> Reverse the default order when typing names
+<strong>Diacritics:</strong> Search using Diacritics (accents above/below characters)</p>
+
+<figure><img class="docimage" src="images/ch_settings_draws1.png" alt="Draws" /><figcaption>Draws Settings</figcaption></figure>
+
+<p><strong>Compressed Draw Formats:</strong> Whether to allow 12, 24, 48 draw sizes
+<strong>Automatic Bye Placement:</strong> De-select if you want to place Byes manually
+<strong>Fixed Bye Order:</strong> Do not place byes strictly by seeding (configurable by keys)
+<strong>Auto Separate Players By Country:</strong> In automating draw creation
+<strong>Auto Separate Players By Club:</strong> In automating draw creation
+<strong>Auto Separate Players By School:</strong> In automating draw creation</p>
+
+<figure><img class="docimage" src="images/ch_settings_draws2.png" alt="Draws" /><figcaption>Draws Settings</figcaption></figure>
+
+<p><strong>LL from All Qualifying Rounds:</strong> Include losers from all rounds on LL sign up sheet
+<strong>Qualifying Consolation:</strong> Enable consolation draws to be created directly from qualification draws
+<strong>Consolation Alternates:</strong> Enable players to be added into a consolation draw even if they didn’t lose in a main draw
+<strong>Consolation Seeding:</strong> Seed players in Consolation Events (by GEM scores if configured by organization key)
+<strong>Restrict Seed Placement:</strong> Place seeds according to defaults or organization key settings.  Unchecking this option enables seeds to be placed freely throughout a draw (to support the replication of irregular draws).</p>
+
+<p><strong>Country Flags Displayed:</strong> Display country flags alongside player names in online draws
+<strong>Match Times:</strong> Display match times to be displayed in online and PDF draws
+<strong>Match Dates:</strong> Display match dates to be displayed in online and PDF draws
+<strong>Court Details:</strong> Display scheduled court in online and PDF draws
+<strong>Matches Before Count:</strong> Display the number of incomplete matches on court prior to a given match</p>
+
+<figure><img class="docimage" src="images/ch_settings_publishing.png" alt="Draws" /><figcaption>Publishing Settings</figcaption></figure>
+
+<p><strong>Require Confirmation:</strong> Do not publish without confirmation
+<strong>Publish when score entered:</strong> Immediate publishing to CourtHive/Live as scores are entered
+<strong>Publish as draw created:</strong> Publish a draw in real-time as players are placed</p>
+
+<figure><img class="docimage" src="images/ch_settings_printing.png" alt="Draws" /><figcaption>Printing Settings</figcaption></figure>
+
+<p><strong>Save PDFs:</strong> Save PDFs immediately instead of opening in a new browser tab.  This is useful if your browser is blocking pop-ups and you don’t know how to enable pop-ups.</p>
+
+<figure><img class="docimage" src="images/ch_settings_schedule.png" alt="Draws" /><figcaption>Schedule Settings</figcaption></figure>
+
+<p><strong>Scores in Draw Order:</strong> As opposed to <strong><em>Winner Score First</em></strong>
+<strong>Schedule Completed Matches:</strong> Show completed matches in <strong><em>Search</em></strong> when pulling matches into schedule cells</p>
+
+<h2 id="custom-settings">Custom Settings</h2>
+
+<p><a href="tmx_configuration.html">Configuration Keys</a>, which may include Organization Keys and Custom Keys are able to enable  aspects of CourtHive/TMX which are not available in the Settings dialogues.  If you have specific requirements please email <a href="mailto:support@courthive.com">support@courthive.com</a> to see if the features you require are already available and can be enabled.</p>
 
 
     <div class="tags">
@@ -600,7 +603,7 @@
                 <div class="col-lg-12 footer">
                   <img src="images/ch_logo.png" alt="CourtHive"/><br />
                &copy;2018 CourtHive. All rights reserved. <br />
- Site last generated: Oct 24, 2018 <br />
+ Site last generated: Oct 26, 2018 <br />
                 </div>
             </div>
 </footer>

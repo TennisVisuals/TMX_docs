@@ -6,7 +6,7 @@ permalink: tmx_support.html
 toc: false
 ---
 
-CourtHive/TMX is a collaborative development effort.  Currently we are working directly with referees from National Federations.  If you are a serious user you are welcome to join the team!
+CourtHive/TMX is a collaborative development effort.  Currently we are working directly with referees from National Federations as well as Independent Organizers.  If you are a serious user you are welcome to join the team!
 
 ## Bespoke Development
 Bespoke development services are available if you wish to prioritize features that are currently planned, have features added that are not currently contemplated, or if you require help in setting up a CourtHive server of your own.
@@ -19,5 +19,5 @@ Feel free to contact us via email:
 
 ## Issue Tracking
 At present Trello is being used to track bugs and enhancement requests:
-* [Bugs](https://trello.com/b/eR3fzCuR/bugs)
-* [Enhancements](https://trello.com/b/WyJw0266/enhancements)
+* [Bugs](https://trello.com/b/eR3fzCuR/bugs){:target="_ blank"}
+* [Enhancements](https://trello.com/b/WyJw0266/enhancements){:target="_ blank"}

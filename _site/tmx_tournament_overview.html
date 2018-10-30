@@ -162,7 +162,7 @@
                 
 
 <ul id="mysidebar" class="nav">
-  <li class="sidebarTitle">CourtHive TMX 1.3</li>
+  <li class="sidebarTitle">CourtHive TMX 1.4</li>
   
   
   
@@ -297,21 +297,14 @@
           
           
           
+          <li><a href="tmx_players_managing.html">Local Player Database</a></li>
+          
+          
+          
+          
+          
+          
           <li><a href="tmx_data_storage.html">Configuring Data Storage</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a href="tmx_players_managing.html">Managing Players</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a href="tmx_players_rankings.html">Player Rankings</a></li>
           
           
           
@@ -452,6 +445,43 @@
    </li>
      
       
+  
+  <li>
+      <a href="#">Event Types</a>
+      <ul>
+          
+          
+          
+          <li><a href="tmx_events_elimination.html">Elimination</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_events_feed.html">Staggered Entry / Feed-In</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_events_compass.html">Compass</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_events_round_robin.html">Round Robin</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
       
       <!-- if you aren't using the accordion, uncomment this block:
          <p class="external">
@@ -522,25 +552,65 @@ $('#toc').on('click', 'a', function() {
 
 <figure><img class="docimage" src="images/ch_challenge_view.png" alt="Add Player" /><figcaption>Tournament Information</figcaption></figure>
 
-<p>Once in <strong>Editing Mode</strong> a number of other tabs and options become available, and the tournament information fields become editable.</p>
+<p>Once in <strong>Editing Mode</strong> other tabs and options become available, and the tournament information fields become editable.</p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Some functionality is not available until an <strong>Organization Key</strong> has been entered.</div>
 
 <figure><img class="docimage" src="images/ch_challenge_edit.png" alt="Add Player" /><figcaption>Tournament Editing Mode</figcaption></figure>
 
 <p>To exit <strong>Editing Mode</strong>, click on the <strong>Check Mark</strong> in the upper right hand corner.</p>
 
-<h2 id="downloading-tournaments">Downloading Tournaments</h2>
+<h2 id="authorization">Authorization</h2>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Some functionality is not available until an <strong>Organization Key</strong> has been entered.</div>
+<p>If TMX is enabled for publishing to CourtHive.com/Live then a small set of keys will appear top-center.</p>
 
-<p>In the center of the tournament panel there is a <strong>Cloud Download</strong> icon.  Clicking this icon will retrieve a version of the current tournament from the <a href="tmx_cloud_server.html">CourtHive Cloud Server.</a></p>
+<div style="display: flex; flex-wrap: wrap;">
+<div style="padding-right: 1em;"><figure><img class="docimage" src="images/ch_keys_unauth.png" alt="Unauthorized" /><figcaption>Unauthorized</figcaption></figure>
 
-<figure><img class="docimage" src="images/ch_cloudfetch_notfound.png" alt="Not Found" /><figcaption>Not Found</figcaption></figure>
+</div>
+<figure><img class="docimage" src="images/ch_keys_auth.png" alt="Authorized" /><figcaption>Authorized</figcaption></figure>
 
-<p>If no version of the current tournament has been pushed to the server, an error message is shown.</p>
+</div>
+
+<p>The color of the keys indicates whether the TMX is authorized for publishing.</p>
+
+<p>If the an <a href="tmx_configuration.html">Administrator Key</a> has been entered, clicking the keys icon will generate an authorization code which can be sent to a referee or tournament organizer.</p>
+
+<p>Authorization keys can also be used by administrators to pre-publish <a href="/tmx_tournament_information.html#tournament-notes">tournament notes</a>, <a href="tmx_tournament_information.html#tournament-registration">registration information</a>, <a href="tmx_tournament_information.html#social-media-links">social media links</a>, and even event and draws in advance of passing on control to staff who will manage tournaments on-site.</p>
+
+<p>When an authorization key is entered the corresponding tournament is automatically “pulled” from the CourtHive Cloud Server into the local TMX database.</p>
+
+<h2 id="cloud-fetch">Cloud Fetch</h2>
+
+<p>If a tournament record has been “pushed to the <a href="tmx_cloud_server.html">CourtHive Cloud Server.</a>, clicking the “Cloud Fetch” icon will offer the option of “pulling” the tournament record into TMX, or “merging” any published events with the local tournament record.</p>
+
+<figure><img class="docimage" src="images/ch_cloud_fetch.png" alt="Cloud Fetch" /><figcaption>Cloud Fetch</figcaption></figure>
+
+<p>“Cloud Fetch” capabilities make it possible to pass versions of a tournament between referees/organizers who may be present at different tournament venues.  The same capabilities underlie the ability of TMX to delegate entire tournaments to mobile devices so that referees can spent more time courtside.</p>
+
+<h3 id="download-tournament-record">Download Tournament Record</h3>
+
+<p>When downloading a tournament record from the <a href="tmx_cloud_server.html">CourtHive Cloud Server.</a> you are presented with a dialogue which includes a <strong><em>timestamp</em></strong> for when the record was pushed to the server.</p>
 
 <figure><img class="docimage" src="images/ch_cloudfetch_replace_tournament.png" alt="Replace Tournament" /><figcaption>Replace Tournament</figcaption></figure>
 
+<p>If no version of the current tournament has been pushed to the server, an error message is shown.</p>
+
+<figure><img class="docimage" src="images/ch_cloudfetch_notfound.png" alt="Not Found" /><figcaption>Not Found</figcaption></figure>
+
 <p>The <a href="tmx_tournament_information.html">Tournament Information</a> section describes how to push copies of a tournament to the  <a href="tmx_cloud_server.html">CourtHive Cloud Server.</a></p>
+
+<h3 id="merge-events">Merge Events</h3>
+
+<p>Tournament events are published independently.  In other words, tournament events may be published without a tournament record ever having been “pushed” to the <a href="tmx_cloud_server.html">CourtHive Cloud Server.</a>.  The ability to fetch published events means that the latest published version of events may be merged into a local copy of a tournament  which exists on an administrator computer, for instance.</p>
+
+<figure><img class="docimage" src="images/tmx_merge_events.png" alt="Merge Events" /></figure>
+
+<h2 id="tournament-web-link">Tournament Web Link</h2>
+
+<figure><img class="docimage" src="images/ch_web_link.png" alt="Tournament Link" /><figcaption>Tournament Link</figcaption></figure>
+
+<p>Click this icon to generate a QR Code which can be included with marketing materials related to a tournament.  The Tournament Web Link icon also copies a web address which can be included with emails or other social media.</p>
 
 
     <div class="tags">
@@ -559,7 +629,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                   <img src="images/ch_logo.png" alt="CourtHive"/><br />
                &copy;2018 CourtHive. All rights reserved. <br />
- Site last generated: Oct 26, 2018 <br />
+ Site last generated: Oct 29, 2018 <br />
                 </div>
             </div>
 </footer>

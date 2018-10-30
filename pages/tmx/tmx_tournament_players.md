@@ -12,6 +12,10 @@ The Players Tab is where tournament players are managed.  Registered players may
 
 {% include image.html file="ch_tournament_players.png" alt="Tournament Players" caption="Tournament Players" %}
 
+Once players have been added to a tournament other options appear...
+
+{% include image.html file="ch_tournament_players_org.png" alt="Tournament Players" caption="Additional Options" %}
+
 ## Synchronizing Registered Players
 
 [Organization Keys](tmx_configuration.html) can configure CourtHive/TMX to retrieve players registered for tournaments from remote servers.

@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="keywords" content=" Tournament Players Database">
-<title>Managing Players | CourtHive Documentation</title>
+<title>Local Player Database | CourtHive Documentation</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -136,7 +136,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Managing Players">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Local Player Database">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -162,7 +162,7 @@
                 
 
 <ul id="mysidebar" class="nav">
-  <li class="sidebarTitle">CourtHive TMX 1.3</li>
+  <li class="sidebarTitle">CourtHive TMX 1.4</li>
   
   
   
@@ -297,21 +297,14 @@
           
           
           
+          <li class="active"><a href="tmx_players_managing.html">Local Player Database</a></li>
+          
+          
+          
+          
+          
+          
           <li><a href="tmx_data_storage.html">Configuring Data Storage</a></li>
-          
-          
-          
-          
-          
-          
-          <li class="active"><a href="tmx_players_managing.html">Managing Players</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a href="tmx_players_rankings.html">Player Rankings</a></li>
           
           
           
@@ -452,6 +445,43 @@
    </li>
      
       
+  
+  <li>
+      <a href="#">Event Types</a>
+      <ul>
+          
+          
+          
+          <li><a href="tmx_events_elimination.html">Elimination</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_events_feed.html">Staggered Entry / Feed-In</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_events_compass.html">Compass</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_events_round_robin.html">Round Robin</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
       
       <!-- if you aren't using the accordion, uncomment this block:
          <p class="external">
@@ -470,7 +500,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Managing Players</h1>
+   <h1 class="post-title-main">Local Player Database</h1>
 </div>
 
 
@@ -510,23 +540,23 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <h2 id="local-data">Local Data</h2>
-
-<p>In normal use by organizations which have configured TMX to connect with existing tournament registration systems, the local player database exists primarily to facilitate the addition of players who sign in on site.</p>
+  <p>In normal use by organizations which have configured TMX to connect with existing tournament registration systems, the local player database exists primarily to facilitate the addition of players who sign in on site.</p>
 
 <p>For individuals or clubs to construct tournaments independent of external tournament registration systems, using the local player database means that player information only needs to be entered once.</p>
 
 <p>At present there is no ability to edit players which are imported, the assumption being that player data is maintained externally and imported/synchronized only to facilitate tournament creation.</p>
 
-<h2 id="remote-database-sync">Remote Database Sync</h2>
+<p>Administrators who have been granted access to <a href="tmx_data_storage.html">Data Storage Configuration</a> have the option of maintaining a master player database in <a href="tmx_google_sheets.html">Google Sheets</a>.  This master database can be configured to synchronize with the Local Data for any organization Referee or Administrator.</p>
+
+<h3 id="remote-database-sync">Remote Database Sync</h3>
 
 <p>If CourtHive/TMX is has been configured by an <a href="tmx_configuration.html">Organization Key</a>, the player database may be imported/synchronized by hovering the mouse over the <strong>Player Count</strong> icon in the upper right corner and clicking on the Refresh icon that appears.</p>
 
 <figure><img class="docimage" src="images/ch_players_refresh.png" alt="Players" /><figcaption>Refresh Players</figcaption></figure>
 
-<p>After successfully synchronizing the player database the <strong>Player Count</strong> will change to reflect the number of players in the database.</p>
+<p>After synchronizing, the <strong>Player Count</strong> will change to reflect the number of players in the database.</p>
 
-<h2 id="copy-from-tournament">Copy from Tournament</h2>
+<h3 id="import-from-tournament">Import from Tournament</h3>
 
 <p>Tournament Players may be added to the local database by clicking on the header to the <strong>Player</strong> column in the <a href="tmx_tournament_players.html">Players Tab</a>…</p>
 
@@ -536,7 +566,7 @@ $('#toc').on('click', 'a', function() {
 
 <figure><img class="docimage" src="images/ch_add_tournament_players.png" alt="Add Tournament Players" /><figcaption></figcaption></figure>
 
-<h2 id="dragdrop-import">Drag/Drop Import</h2>
+<h3 id="dragdrop-import">Drag/Drop Import</h3>
 
 <p>For bulk loading of players when there is no remotely accessible player database, a <strong>Spreadsheet Template</strong> has been provided.</p>
 
@@ -553,7 +583,7 @@ $('#toc').on('click', 'a', function() {
 
 <p>There are four tabs in the  <strong>Spreadsheet Template.</strong>  The “CourtHive” tab is blank, but must be present for the system to recognize the spreadsheet.  The other three tabs are optional and can be deleted depending on what type of data is being imported. For players it is important that Player IDs are unique.</p>
 
-<h2 id="manual-entry">Manual Entry</h2>
+<h3 id="manual-entry">Manual Entry</h3>
 
 <p>A local player database can be constructed by entering players one at a time.</p>
 
@@ -588,7 +618,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                   <img src="images/ch_logo.png" alt="CourtHive"/><br />
                &copy;2018 CourtHive. All rights reserved. <br />
- Site last generated: Oct 26, 2018 <br />
+ Site last generated: Oct 29, 2018 <br />
                 </div>
             </div>
 </footer>

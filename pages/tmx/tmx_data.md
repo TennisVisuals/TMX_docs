@@ -14,7 +14,7 @@ __IndexedDB__ is part of all modern browsers, but its function can sometimes be 
 
 CourtHive/TMX uses the Menu/Home Icon to indicate when there may be issues with the persistence of local data.  If a possible issue is detected, the Menu/Home Icon turns <font color='red'>Red</font>.  Data may still be saved, but it is not guaranteed, which means the [User Agent](https://en.wikipedia.org/wiki/User_agent) may in some cases delete  site-specific data.
 
-See [Tournament Information](tmx_tournament_information.html) for instructions on how to push/pull copies of tournaments to/from the CourtHive Server and save copies of tournaments locally. See [Local Data](tmx_data_local.html) for instructions on how to reload tournaments from your local file system.
+See [Tournament Information](tmx_tournament_information.html) for instructions on how to push/pull copies of tournaments to/from the CourtHive Server and save copies of tournaments locally. See [Local Player Database](tmx_players_managing.html) for instructions on how to maintain a local database of players to accommodate on-site sign-in of known players as well as historical match and ranking data for each known player.
 
 The local database can be populated in two ways:
 * Drag/Drop of JSON, XLSX, or CSV Files: See [Importing/Exporting Local Data](tmx_data_local.html)

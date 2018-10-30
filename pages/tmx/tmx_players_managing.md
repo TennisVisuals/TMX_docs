@@ -1,11 +1,10 @@
 ---
-title: Managing Players
+title: Local Player Database
 keywords: Tournament Players Database
 sidebar: ch_sidebar
 permalink: tmx_players_managing.html
 toc: true
 ---
-## Local Data
 
 In normal use by organizations which have configured TMX to connect with existing tournament registration systems, the local player database exists primarily to facilitate the addition of players who sign in on site.
 
@@ -13,15 +12,17 @@ For individuals or clubs to construct tournaments independent of external tourna
 
 At present there is no ability to edit players which are imported, the assumption being that player data is maintained externally and imported/synchronized only to facilitate tournament creation.  
 
-## Remote Database Sync
+Administrators who have been granted access to [Data Storage Configuration](tmx_data_storage.html) have the option of maintaining a master player database in [Google Sheets](tmx_google_sheets.html).  This master database can be configured to synchronize with the Local Data for any organization Referee or Administrator.
+
+### Remote Database Sync
 
 If CourtHive/TMX is has been configured by an [Organization Key](tmx_configuration.html), the player database may be imported/synchronized by hovering the mouse over the __Player Count__ icon in the upper right corner and clicking on the Refresh icon that appears.
 
 {% include image.html file="ch_players_refresh.png" alt="Players" caption="Refresh Players" %}
 
-After successfully synchronizing the player database the __Player Count__ will change to reflect the number of players in the database.
+After synchronizing, the __Player Count__ will change to reflect the number of players in the database.
 
-## Copy from Tournament
+### Import from Tournament
 
 Tournament Players may be added to the local database by clicking on the header to the __Player__ column in the [Players Tab](tmx_tournament_players.html)...
 
@@ -31,7 +32,7 @@ Which will present the following dialogue:
 
 {% include image.html file="ch_add_tournament_players.png" alt="Add Tournament Players" caption="" %}
 
-## Drag/Drop Import
+### Drag/Drop Import
 
 For bulk loading of players when there is no remotely accessible player database, a __Spreadsheet Template__ has been provided.
 
@@ -46,7 +47,7 @@ The __Spreadsheet Template__ can be downloaded from the __Import/Export__ screen
 
 There are four tabs in the  __Spreadsheet Template.__  The "CourtHive" tab is blank, but must be present for the system to recognize the spreadsheet.  The other three tabs are optional and can be deleted depending on what type of data is being imported. For players it is important that Player IDs are unique.
 
-## Manual Entry
+### Manual Entry
 
 A local player database can be constructed by entering players one at a time.
 

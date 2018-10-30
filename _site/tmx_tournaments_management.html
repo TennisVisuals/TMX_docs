@@ -162,7 +162,7 @@
                 
 
 <ul id="mysidebar" class="nav">
-  <li class="sidebarTitle">CourtHive TMX 1.3</li>
+  <li class="sidebarTitle">CourtHive TMX 1.4</li>
   
   
   
@@ -297,21 +297,14 @@
           
           
           
+          <li><a href="tmx_players_managing.html">Local Player Database</a></li>
+          
+          
+          
+          
+          
+          
           <li><a href="tmx_data_storage.html">Configuring Data Storage</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a href="tmx_players_managing.html">Managing Players</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a href="tmx_players_rankings.html">Player Rankings</a></li>
           
           
           
@@ -452,6 +445,43 @@
    </li>
      
       
+  
+  <li>
+      <a href="#">Event Types</a>
+      <ul>
+          
+          
+          
+          <li><a href="tmx_events_elimination.html">Elimination</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_events_feed.html">Staggered Entry / Feed-In</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_events_compass.html">Compass</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_events_round_robin.html">Round Robin</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
       
       <!-- if you aren't using the accordion, uncomment this block:
          <p class="external">
@@ -528,9 +558,19 @@ $('#toc').on('click', 'a', function() {
 
 <figure><img class="docimage" src="images/ch_add_tournament_icon.png" alt="Add Tournament" /><figcaption>Add Tournament</figcaption></figure>
 
-<p>Clicking the Add Tournament Icon launches an Add Tournament dialogue.</p>
+<p>Clicking the Add Tournament Icon presents several options:</p>
+
+<figure><img class="docimage" src="images/tmx_tournament_add_menu.png" alt="Add Tournament" /><figcaption>Add Tournament Options</figcaption></figure>
+
+<h3 id="new-tournament">New Tournament</h3>
+
+<p>Clicking the “New Tournament” option presents a dialogue for entering information that is required by the calendar.</p>
 
 <p>Fields in <strong>Yellow</strong> are required before a new tournament can be added.</p>
+
+<p><strong>Tournament Type</strong> may be either <em>Standard</em> or <em>Dual Matches</em>.  For “Team Tournaments” select <em>Dual Matches</em>.</p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Different options appear when editing tournaments depending on the tournament type.</div>
 
 <div style="display: flex; flex-wrap: wrap;">
    <figure><img class="docimage" src="images/ch_add_tournament.png" alt="Add Tournament" /></figure>
@@ -539,19 +579,33 @@ $('#toc').on('click', 'a', function() {
 
 </div>
 
+<p>Once new tournament information has been submitted the tournament appears in the calendar view (unless the tournament dates fall outside of the <strong>Date Range</strong> defined by the <strong>From:</strong> and <strong>To:</strong> date selectors).</p>
+
 <figure><img class="docimage" src="images/ch_challenge_calendar.png" alt="Tournament Added" /></figure>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> In some configurations, <a href="tmx_fundamentals.html">“Context Clicking”</a> the Add Tournament Icon allows the entry of a tournament ID which can pull tournament information directly from a remote server.</div>
+<h3 id="load-by-id">Load by ID</h3>
+
+<p>Some organization keys allow tournaments to be pulled into TMX from a remote calendar.</p>
+
+<figure><img class="docimage" src="images/tmx_tournament_id.png" alt="Tournament Added" /></figure>
+
+<p>If your organization/federation maintains a database of tournaments on an existing server and this option is enabled, enter the tournament ID at the prompt.</p>
+
+<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> Tournaments retrieved by ID may fall out of the currently defined calendar date range.  If you don’t see the tournament appear, check the <strong>From:</strong> and <strong>To:</strong> dates.</div>
+
+<h3 id="import-record">Import Record</h3>
+
+<p>To import a JSON formatted tournament record that was previously exported, see <a href="tmx_data_local.html#tournaments-and-players">Importing Local Data</a>.</p>
 
 <h2 id="deleting-and-editing-tournaments">Deleting and Editing Tournaments</h2>
 
-<p><a href="tmx_fundamentals.html">“Context Click”</a> on any tournament for the option to either edit or delete the tournament.</p>
+<p>Tournament information (such as a tournament name) may edited and tournaments may be deleted by <a href="tmx_fundamentals.html">“Context Clicking”</a> on any tournament.  Clicking on the Date, Category, or Rank columns is the same as context clicking and allows these options to be accessed on <strong>Touch Devices</strong>.</p>
 
 <figure><img class="docimage" src="images/ch_tournament_delete.png" alt="Delete Tournament" /><figcaption>Edit or Delete a Tournament</figcaption></figure>
 
 <p>Choosing to edit a tournament launches the same dialogue used to Add a New Tournament, with all of the values filled in.</p>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> In some configurations there is the option to “Merge” tournaments, which has the effect of combining lists of registered players.</div>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> In some configurations there is the option to “Merge” tournaments, which has the effect of combining lists of registered players.  This situation occurs because some organizations have different tournament IDs for Male/Female events.</div>
 
 
 
@@ -571,7 +625,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                   <img src="images/ch_logo.png" alt="CourtHive"/><br />
                &copy;2018 CourtHive. All rights reserved. <br />
- Site last generated: Oct 26, 2018 <br />
+ Site last generated: Oct 29, 2018 <br />
                 </div>
             </div>
 </footer>

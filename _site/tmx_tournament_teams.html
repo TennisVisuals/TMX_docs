@@ -542,10 +542,75 @@ $('#toc').on('click', 'a', function() {
 
   <h2 id="introduction">Introduction</h2>
 
-<p>The Teams Tab appears only for Team Tournaments.</p>
+<p>The Teams Tab appears when editing a <strong>Team Tournament</strong> (Dual Matches).</p>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Under Construction</div>
+<figure><img class="docimage" src="images/tmx_teams_tab.png" alt="Teams" /><figcaption>Teams Tab</figcaption></figure>
 
+<p>There are several ways to Add a new team:</p>
+<ul>
+  <li><strong>Create New</strong> by entering only a team name</li>
+  <li><strong>Load Players</strong> using a <a href="http://courthive.com/tmx/assets/CourtHiveImportTemplate.xlsx">Player Spreadsheet</a> from the local file system</li>
+  <li><strong>Submit Key</strong> to retrieve a team list from the CourtHive Cloud Server</li>
+</ul>
+
+<figure><img class="docimage" src="images/tmx_add_team.png" alt="Add Team" /><figcaption>Add Team</figcaption></figure>
+
+<p>If no name is supplied then a new team is created with a default name of <strong>“New Team”</strong>.</p>
+
+<p><strong>“Load Players”</strong> is similar to <a href="tmx_tournament_players.html#adding-players-from-spreadsheet-files">Adding Players to the tournament from spreadsheet files</a>, except that players in a spreadsheet are added to the current team as well as to the tournament.</p>
+
+<p><strong>“Submit Key”</strong> will load a team record which was previously shared to the CourtHive Cloud Server</p>
+
+<figure><img class="docimage" src="images/tmx_team_detail.png" alt="Team Details" /><figcaption>Team Details</figcaption></figure>
+
+<h2 id="editing-team-name">Editing Team Name</h2>
+
+<p>To edit a <strong>Team Name</strong>, click on the team name in the detail panel.</p>
+
+<p>When clicked the team name becomes editable (see above).  Modifying the name and pressing <strong>Enter/Return</strong> accepts the change.</p>
+
+<h2 id="adding-team-players">Adding Team Players</h2>
+
+<h3 id="using-the-search-box">Using the Search Box</h3>
+
+<p>When editing a team, the <a href="tmx_searchbox.html">Search Box</a> recognizes the context and changes mode to <strong>“Add Team Player”</strong> so that searching for players adds them to the team.</p>
+
+<figure><img class="docimage" src="images/tmx_add_team_player.png" alt="Add Team Player" /><figcaption>Add Team Player</figcaption></figure>
+
+<h3 id="synchronizing-team-rosters">Synchronizing Team Rosters</h3>
+
+<div style="display: flex; flex-wrap: wrap;">
+<div style="padding-right: 1em;">
+<figure><img class="docimage" src="images/tmx_url.png" alt="Link" /><figcaption>Link</figcaption></figure>
+
+</div>
+<figure><img class="docimage" src="images/tmx_refresh.png" alt="Refresh" /><figcaption>Refresh</figcaption></figure>
+
+</div>
+
+<p>Team Rosters may be managed using <a href="tmx_google_sheets.html">Google Sheets</a>, which makes it easy for team captains to make modifications from any device (laptops/mobiles).</p>
+
+<p>The <strong>Refresh</strong> icon appears only after a link has been entered.</p>
+
+<p>When a link is provided to a <a href="tmx_google_sheets.html">Google Sheets</a>, team players <strong><em>cannot</em></strong> be added any other way.</p>
+
+<h2 id="managing-team-players">Managing Team Players</h2>
+
+<h3 id="changing-player-order">Changing Player Order</h3>
+
+<figure><img class="docimage" src="images/ch_rankings_icon.png" alt="Modify Rankings" /><figcaption>Toggle Edit Mode</figcaption></figure>
+
+<p>To change the order of players in a Team Roster, click the <strong>“Modify Rankings”</strong> icon.  Once you are satisfied with the order, click the icon again and the players will be re-ordered.</p>
+
+<figure><img class="docimage" src="images/tmx_team_player_order.png" alt="Player Order" /><figcaption>Edit Player Order</figcaption></figure>
+
+<p>Team order is used to determine the selection order when constructing matches in <strong>Dual Events</strong>.</p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> The names of players who have not yet been signed appear faded.</div>
+
+<h3 id="deleting-players">Deleting Players</h3>
+
+<p>Players may be deleted from a team by <a href="tmx_fundamentals.html">Context Clicking</a> on their name.</p>
 
 
     <div class="tags">
@@ -564,7 +629,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                   <img src="images/ch_logo.png" alt="CourtHive"/><br />
                &copy;2018 CourtHive. All rights reserved. <br />
- Site last generated: Oct 29, 2018 <br />
+ Site last generated: Oct 30, 2018 <br />
                 </div>
             </div>
 </footer>

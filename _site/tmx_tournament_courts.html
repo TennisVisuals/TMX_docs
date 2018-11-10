@@ -510,55 +510,72 @@
    
 
     
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
 
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
+});
+</script>
+
+<div id="toc"></div>
 
     
 
 
     
 
-  <p>Before any <a href="tmx_tournament_schedule.html">Scheduling</a> can occur, <strong>Court Locations</strong> must be defined. This is a fairly simple process.</p>
 
-<p>Fields in <strong>Yellow</strong> are required.  The table below describes the attributes of each Court Location.</p>
+    
+
+  <h2 id="court-locations">Court Locations</h2>
+<p>Before any <a href="tmx_tournament_schedule.html">Scheduling</a> can occur, <strong>Court Locations</strong> must be defined.</p>
+
+<p>Fields in <strong>Yellow</strong> are required.</p>
 
 <figure><img class="docimage" src="images/ch_courts_tab.png" alt="Add Location" /><figcaption>Add Court Location</figcaption></figure>
 
-<table>
-  <thead>
-    <tr>
-      <th>Field</th>
-      <th>Definition</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Abbr.</td>
-      <td>The court abbreviation is used at the top of schedule columns</td>
-    </tr>
-    <tr>
-      <td>Name</td>
-      <td>Not currently used</td>
-    </tr>
-    <tr>
-      <td>Address</td>
-      <td>Not currently used</td>
-    </tr>
-    <tr>
-      <td>Courts</td>
-      <td>The number of courts at this location</td>
-    </tr>
-    <tr>
-      <td>Court IDs</td>
-      <td>(Optional) A comma separated list of court identifiers</td>
-    </tr>
-  </tbody>
-</table>
+<h3 id="abbreviation">Abbreviation</h3>
+<p>The <strong>Abbreviation</strong> is used at the top of <strong>Schedule</strong> columns to differentiate locations.</p>
+
+<p>If only one court location is used, then <strong>“Court”</strong> is appropriate.</p>
+
+<h3 id="court-ids">Court IDs</h3>
+
+<p>An (Optional) comma separated list of court identifiers.</p>
+
+<p>By default courts are numbers sequentially: 1, 2, 3, 4…</p>
+
+<p>Enter any comma or space delimited string to give each court a unique identifier: CC, A, B, 3, 7, 8</p>
 
 <div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> Court IDs can be used to change the order of courts on the Schedule.</div>
 
-<figure><img class="docimage" src="images/ch_courts_defined.png" alt="Location Added" /><figcaption>Court Location Added</figcaption></figure>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> The <a href="tmx_tournament_schedule.html">Schedule Tab</a> will appear after at least one court location is added and one tournament event has been created.</div>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> The <strong>Schedule Tab</strong> will appear after at least one court location is added.</div>
+<h3 id="latitude--longitude">Latitude / Longitude</h3>
+
+<p>In the future, Geolocation Services will be used in a number of ways by TMX.</p>
+
+<ul>
+  <li>Providing online maps to court locations for tournament participants</li>
+  <li>Geofencing for Crowdsourced Live Scoring</li>
+</ul>
+
+<p>Geo position may be defined by manually entering Latitude and Longitude coordinates, by pasting a link (website address) to a Google Map location, or by clicking the <strong>Geo Location</strong> icon</p>
+
+<figure><img class="docimage" src="images/tmx_geo_location.png" alt="Location" /><figcaption>Geo Location</figcaption></figure>
 
 
 
@@ -578,7 +595,7 @@
                 <div class="col-lg-12 footer">
                   <img src="images/ch_logo.png" alt="CourtHive"/><br />
                &copy;2018 CourtHive. All rights reserved. <br />
- Site last generated: Oct 29, 2018 <br />
+ Site last generated: Oct 30, 2018 <br />
                 </div>
             </div>
 </footer>

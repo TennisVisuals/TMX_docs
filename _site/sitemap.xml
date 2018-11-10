@@ -120,7 +120,31 @@
   
   
   <url>
+    <loc>http://localhost:4000/tmx_events_elimination.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/tmx_events_compass.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/tmx_events_feed.html</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4000/tmx_events_management.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/tmx_events_round_robin.html</loc>
   </url>
   
   

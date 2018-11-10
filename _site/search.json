@@ -153,10 +153,54 @@
 
 
 {
+"title": "Elimination Events",
+"tags": "",
+"keywords": "events elimination tree draw",
+"url": "tmx_events_elimination.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Compass Events",
+"tags": "",
+"keywords": "events Compass tree draw",
+"url": "tmx_events_compass.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Staggered Entry / Feed-In Events",
+"tags": "",
+"keywords": "events elimination tree draw",
+"url": "tmx_events_feed.html",
+"summary": ""
+}
+,
+
+
+
+{
 "title": "Tournament Events",
 "tags": "",
 "keywords": "tournament event management",
 "url": "tmx_events_management.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Round Robin Events",
+"tags": "",
+"keywords": "events round robin draw",
+"url": "tmx_events_round_robin.html",
 "summary": ""
 }
 ,
